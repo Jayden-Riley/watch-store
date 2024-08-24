@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <!-- header section -->
+          <!-- 
+            - Uses flexbox for layout with items centered and spaced between.
+            - Background color is set to blue with padding adjusted for different screen sizes.
+            - Logo image is contained within its parent, preserving aspect ratio.
+            - Text is uppercase and white, with flexible padding and spacing.
+        -->
+        <header class="flex items-center justify-between bg-blue-600 py-3 px-2 md:px-4 lg:px-6 xl:px-8">
+            <img src="https://img.freepik.com/premium-vector/watch-logo-design-casual-style-black-white-monochrome_1108897-8.jpg?semt=ais_hybrid" 
+                 alt="Logo" 
+                 class="h-10 w-auto object-contain ">
+            <p class="uppercase text-white">Top brand watches at best price</p>
+        </header>
+        <!-- header section -->
+
+
+
+    <main>
+         <!-- hero section -->
+        <!-- 
+            - Relative positioning for the section with a background image.
+            - Absolute positioning for the overlay text, with flexbox for centering.
+            - Responsive padding and font sizes for different screen sizes.
+            - Background color of overlay with opacity for text visibility.
+        -->
+        <section class="relative h-screen border-4 border-blue-600 ">
+            <!-- Background Image Container -->
+            <div class="relative w-full h-full">
+                <img src="https://c4.wallpaperflare.com/wallpaper/29/520/1004/breitling-swiss-luxury-watches-swiss-wrist-watches-luxury-analog-watch-breitling-hd-wallpaper-preview.jpg" alt="hero image" class="object-cover w-full h-full">
+                
+                <!-- Container for image and text -->
+                <div class="absolute inset-0 flex flex-col md:flex-row items-center justify-between p-4 md:p-6 lg:p-8 bg-black bg-opacity-30">
+                    <!-- Text Content -->
+                    <div class="flex flex-col items-center md:items-start text-white text-center md:text-left  lg:w-2/5 xl:w-1/3">
+                        <h2 class="text-5xl md:text-4xl lg:text-5xl font-bold mb-4 md:uppercase">New Arrivals</h2>
+                        <p class="mb-4 text-sm md:text-base lg:text-lg xl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat soluta vel ab animi quae necessitatibus molestias ut rerum molestiae qui doloribus dolor, impedit odit tenetur eos eius magnam corporis exercitationem?</p>
+                        <a href="#" class="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 md:py-3 md:px-6 rounded transition-colors duration-300 ease-in-out">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero section -->
+
+         <!-- brand section -->
+           <!-- 
+            - Grid layout with responsive columns for displaying brand logos.
+            - Padding and gap adjusted for different screen sizes.
+        -->
+         <section  class="mt-7 border-4  grid grid-cols-2  gap-4 p-4 md:grid md:grid-cols-6 md:p-7 md:gap-4 " >
+            <img src="https://logowik.com/content/uploads/images/breitling5373.logowik.com.webp" alt="Breitling Logo">
+
+            <img src="https://mrwallpaper.com/images/hd/elegant-3d-rolex-logo-pa7cr98e79z31ngk.jpg" alt="Rolex Logo">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadAKKjwRhFTa46rSBe-FC_A8rMgYYDp5uxw&s" alt="Tissot Logo">
+
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8b99188850911.560c47dcaa8eb.jpg" alt="Bvlgari Logo">
+
+            <img src="https://live.staticflickr.com/2698/5809830985_3d14600949_b.jpg" alt="Omega Logo">
+
+            <img src="https://w0.peakpx.com/wallpaper/796/291/HD-wallpaper-cartier-logo-brown-plaster-background-cartier-3d-logo-brands-cartier-emblem-3d-art-cartier.jpg" alt="Cartier Logo">
+
+        </section>
+        <!-- brand section -->
+
+
+        <!-- product section -->
+          <!-- 
+            - Grid layout for displaying product categories with relative positioning.
+            - Overlay text centered on top of each image, with flexible styling.
+            - Responsive padding and grid layout for different screen sizes.
+        -->
+
+        <section class="grid grid-cols-1 gap-4 px-2 py-4 md:grid md:grid-cols-3 md:p-28">
+            <div class="relative">
+                <img src="https://i.pinimg.com/736x/c4/2a/f6/c42af627abc222376be52d4512e26ce9.jpg" alt="" class="w-full h-auto object-cover">
+                <h3 class="absolute inset-0 flex justify-center items-center uppercase text-blue-600 text-2xl font-bold bg-black bg-opacity-30 ">Men's Watches</h3>
+            </div>
+            <div class="relative">
+                <img src="https://c0.wallpaperflare.com/preview/569/930/429/watch-ladies-watch-jewelry-gift.jpg" alt="" class="w-full h-auto object-cover">
+                <h3 class="absolute inset-0 flex justify-center items-center uppercase text-blue-600 text-2xl font-bold bg-black bg-opacity-30 ">Ladies' Watches</h3>
+            </div>
+            <div class="relative">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEPbTLcCjEkU5qCtLyZiIUp5BRpsioI-uHGg&s" alt="" class="w-full h-auto object-cover">
+                <h3 class="absolute inset-0 flex justify-center items-center uppercase text-blue-600 text-2xl font-bold bg-black bg-opacity-30 ">Sale 50% Off</h3>
+            </div>
+        </section>
+        
+        <!-- product section -->
+            
+
+    
+        <!-- footer section -->
+         <!-- 
+            - Flexbox for layout with items centered and spaced between.
+            - Background color is set to blue with padding adjusted for different screen sizes.
+            - Text is uppercase and white, with flexible padding and spacing.
+        -->
+
+     
+        <!-- 
+            - Simple footer with centered text and background color.
+            - Padding and text color are adjusted for visibility.
+        -->
+        <footer class="bg-blue-700 p-4 uppercase text-white justify-center text-center">
+            <p>All rights reserved @ 2022</p>
+        </footer>
+        <!-- footer section -->
+    </main>
+</body>
+</html>
